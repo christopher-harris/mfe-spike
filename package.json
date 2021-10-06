@@ -11,7 +11,7 @@
     "watch": "ng build --watch --configuration development",
     "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js",
     "test:ci": "ng test --watch=false --code-coverage --source-map true",
-    "build:ci": "npm run clean && npm run test && npm run build:prod"
+    "build:ci": "npm run clean && npm run build"
   },
   "private": true,
   "dependencies": {
