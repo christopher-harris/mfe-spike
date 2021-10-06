@@ -9,7 +9,9 @@
     "start:all": "concurrently \"npm run start:shell\" \"npm run start:dashboard\" ",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
+    "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js",
+    "test:ci": "ng test --watch=false --code-coverage --source-map true",
+    "build:ci": "ng build --prod --sourceMap=false --base-href /mfe-spike/"
   },
   "private": true,
   "dependencies": {
